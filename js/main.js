@@ -2,7 +2,6 @@ console.log('Starting up');
 
 function init() {
     renderProjects(gProjs)
-    // createEventListener()
 }
 
 function renderProjects(projs) {
@@ -26,7 +25,6 @@ function renderProjects(projs) {
         `
     }
     $('#projects').html(strHtml);
-    // createEventListener()
 }
 
 function readProj(projId) {
@@ -43,5 +41,14 @@ function readProj(projId) {
     $modal.show()
 }
 
+function onSubmitForm() {
+  var form = $('.form-group')
+  var subject = form.find('#exampleInputEmail1').val()
+  var txt = form.find('#exampleFormControlTextarea1').val()
+  window.open('https://mail.google.com/mail/u/0/?view=cm&fs=1&to=Nadav.Abuhatsira@gmail.com&su='+subject+'&body='+txt+'&tf=1', '_blank');
+}
 
-// onOpenProj() 
+$('#formsubmit').click(function(){
+  onSubmitForm();
+});
+
