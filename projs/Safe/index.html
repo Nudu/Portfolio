@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Safe Content</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="onInit()">
+    <div class="login-container">
+        <div class="login">
+            <div class="imgcontainer">
+                <img src="img/user1.png" alt="Avatar" class="avatar">
+            </div>
+            <div class="container">
+                <b>Username</b>
+                <input class="login-username" type="text" placeholder="Enter Username" name="username" required>
+                <b>Password</b>
+                <input class="login-password" type="password" placeholder="Enter Password" name="password" required>
+                <button onclick="onLogin()" type="submit">Login</button>
+            </div>
+        </div>
+    </div>
+    <h3>Hacker's Menu:</h3>
+    <a href="admin.html">Admin</a>
+    <a href="hidden.html">Hidden Content</a>
+    <script src="js/util-service.js"></script>
+    <script src="js/safe-service.js"></script>
+    <script src="js/safe-controller.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="greetAdmin()">
+    <button class="logout" onclick="clearLocalStorage()">Logout</button>
+    <br>
+    <img src="img/Admin.jpg">
+    <!-- <a href="index.html">Login</a>
+    <a href="hidden.html">Hidden Content</a>
+    <a href="restricted.html">Restricted Redirect</a> -->
+    <h1>Hello <span class="displayed-user"></span>! Our Admin Overlord</h1>
+    <h2>Here are your slaves:</h2>
+    <button onclick="onAddUser()">Add User</button>
+    <h3>Sort By</h3>
+    <select onchange="onSetSort(this.value)">
+        <option></option>
+        <option>Name</option>
+        <option>Last Login</option>
+    </select>
+    <section class="table-section">
+        <table class="admin-table"></table>
+    </section>
+    <script src="js/util-service.js"></script>
+    <script src="js/safe-service.js"></script>
+    <script src="js/safe-controller.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Safe Content</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="greetUser()">
+        <button class="logout" onclick="clearLocalStorage()">Logout</button>
+        <br>
+        <h1>Hello <span class="displayed-user"></span>!</h1>
+    <img src="img/Hidden.jpg">
+    <!-- <a href="admin.html">Admin</a>
+    <a href="index.html">Login</a>
+    <a href="restricted.html">Restricted Redirect</a> -->
+    <script src="js/util-service.js"></script>
+    <script src="js/safe-service.js"></script>
+    <script src="js/safe-controller.js"></script>
+</body>
+
+</html>
